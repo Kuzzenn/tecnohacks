@@ -1,0 +1,64 @@
+
+
+#include <iostream>
+using namespace std;
+
+
+float  div(float a, float b)
+{
+	float c = a/b;
+	return c;
+}
+
+
+
+double product(int a , int b)
+{
+	double c=a*b;
+	return c;
+}
+
+int difference(int a, int b)
+{
+	int c=a-b;
+	return c;
+}
+
+int sum(int a, int b)
+{
+	int c;
+	c=a+b;
+	return c;//return a+b
+}
+
+int main()
+{
+
+	double a,b;
+	cout<<"welcome to c++ calculator \n ";
+	cout<<"enter your first number \n";
+	cin>>a;	
+	cout<<"enter your second  number \n";
+	cin>>b;
+	int op;
+	cout<<"which operation you wanna carry out \n 1.sum \n 2.subtract \n 3.multiply \n 4.divison \n ";
+	cin>>op;
+	if(op==1)
+	{
+		cout<<"the sum is "<<sum(a,b)<<endl;	
+	}	
+	else if(op==2)
+	{
+		cout<<"the difference is "<<difference(a,b)<<endl;	
+	}	
+	else if(op==3)
+	{
+		cout<<"the product is "<<product(a,b)<<endl;	
+	}	
+	else if(op==4)
+	{
+		cout<<"the diviosion is "<<div(a,b)<<endl;	
+	}	
+	return 0;
+}
+	
