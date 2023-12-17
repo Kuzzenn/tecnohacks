@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+using namespace std;
+
+int main()
+{
+srand(time(0));
+cout<<"how many times you want to roll a dice;"<<endl;
+int num;
+int score;
+cin>>num;
+for(int i=1;i<=num;i++)
+{
+	score = rand()%6+1;
+	cout<<"roll "<<i<<" score = "<<score<<endl;
+}
+
+}
